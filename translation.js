@@ -20,7 +20,7 @@ const translations = {
     qualityDesc: "We select only verified and responsible associations.",
     trust: "✓ Trust",
     trustDesc: "Total transparency in every interaction and transaction.",
-    security: "Security",
+    security: "✓ Security",
     securityDesc: "We protect the privacy and data of our users.",
     community: "✓ Community",
     communityDesc: "We foster safe spaces for responsible adults.",
@@ -78,6 +78,7 @@ const translations = {
     messageToAssociation: "Message to the Association",
     sendRequest: "Send Request",
     cancel: "Cancel",
+    footerAboutUs: "Your reliable platform to find quality cannabis associations in Mallorca. Connecting responsible communities.",
     },
   gr: {
     home: "Startseite",
@@ -164,6 +165,7 @@ const translations = {
     messageToAssociation: "Nachricht an den Verein",
     sendRequest: "Anfrage Senden",
     cancel: "Abbrechen",
+    footerAboutUs: "Ihre zuverlässige Plattform zur Suche nach Qualitäts-Cannabisvereinen auf Mallorca. Verbindet verantwortungsbewusste Gemeinschaften.",
   },
 };
 

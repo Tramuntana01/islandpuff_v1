@@ -3,28 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title >Mallorca Cannabis Associations</title>
+    <title>Mallorca Cannabis Associations</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <script src="translation.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "GRresP2mLGypZS5rE",
+        });
+      })();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
     <!-- Navigation -->
     <nav>
       <div class="nav-container">
-        <a href="#home" class="nav-logo"><img src="images/logo.png" class="logo" alt="Island Puff Logo"> Island Puff</a>
+        <a href="#home" onclick="navigateTo('home')" class="nav-logo">
+          Island Puff</a>
         <ul class="nav-menu">
           <li>
-            <a href="#home" class="nav-link active" data-section="home" data-i18n="home">Home</a>
+            <a
+              href="#home"
+              class="nav-link active"
+              data-section="home"
+              data-i18n="home"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="#associations" class="nav-link" data-section="associations" data-i18n="associations"
+            <a
+              href="#associations"
+              class="nav-link"
+              data-section="associations"
+              data-i18n="associations"
               >Associations</a
             >
           </li>
           <li>
-            <a href="#contact" class="nav-link" data-section="contact" data-i18n="contact"
+            <a
+              href="#contact"
+              class="nav-link"
+              data-section="contact"
+              data-i18n="contact"
               >Contact</a
             >
           </li>
@@ -39,16 +69,24 @@
     <section id="home" class="active">
       <div class="container">
         <div class="hero">
-          <h1>Island Puff</h1>
+          <h1>Island Puff</h1> 
           <p data-i18n="heroSubtitle">
             Discover quality and reliable associations throughout the island.
             Your guide to a responsible and safe community.
           </p>
           <div class="hero-buttons">
-            <button class="btn-primary" onclick="navigateTo('associations')" data-i18n="viewAssociations">
+            <button
+              class="btn-primary"
+              onclick="navigateTo('associations')"
+              data-i18n="viewAssociations"
+            >
               View Associations
             </button>
-            <button class="btn-secondary" onclick="scrollToInfo()" data-i18n="moreInformation">
+            <button
+              class="btn-secondary"
+              onclick="scrollToInfo()"
+              data-i18n="moreInformation"
+            >
               More Information
             </button>
           </div>
@@ -74,19 +112,27 @@
             <div class="about-values">
               <div class="value-item">
                 <h5 data-i18n="quality">✓ Quality</h5>
-                <p data-i18n="qualityDesc">We select only verified and responsible associations.</p>
+                <p data-i18n="qualityDesc">
+                  We select only verified and responsible associations.
+                </p>
               </div>
               <div class="value-item">
                 <h5 data-i18n="trust">✓ Trust</h5>
-                <p data-i18n="trustDesc">Total transparency in every interaction and transaction.</p>
+                <p data-i18n="trustDesc">
+                  Total transparency in every interaction and transaction.
+                </p>
               </div>
               <div class="value-item">
                 <h5 data-i18n="security">✓ Security</h5>
-                <p data-i18n="securityDesc">We protect the privacy and data of our users.</p>
+                <p data-i18n="securityDesc">
+                  We protect the privacy and data of our users.
+                </p>
               </div>
               <div class="value-item">
                 <h5 data-i18n="community">✓ Community</h5>
-                <p data-i18n="communityDesc">We foster safe spaces for responsible adults.</p>
+                <p data-i18n="communityDesc">
+                  We foster safe spaces for responsible adults.
+                </p>
               </div>
             </div>
           </div>
@@ -115,7 +161,9 @@
               </p>
             </div>
             <div class="responsible-card">
-              <h4 data-i18n="surroundWithTrust">Surround Yourself with Trust</h4>
+              <h4 data-i18n="surroundWithTrust">
+                Surround Yourself with Trust
+              </h4>
               <p data-i18n="surroundWithTrustText">
                 Share the experience only with trusted people. A good
                 environment is essential for responsible enjoyment.
@@ -213,20 +261,27 @@
               margin-bottom: 30px;
               font-weight: 700;
             "
-            data-i18n="searchYourAssociation">
+            data-i18n="searchYourAssociation"
+          >
             Search your association
           </h2>
           <div class="search-box">
-            <input 
-            data-i18n="searchInput"
+            <input
+              data-i18n="searchInput"
               type="text"
               id="searchInput"
               placeholder="Search by name or location..."
             />
-            <button onclick="searchAssociations()" data-i18n="searchButton">Search</button>
+            <button onclick="searchAssociations()" data-i18n="searchButton">
+              Search
+            </button>
           </div>
           <div class="filter-tags">
-            <div class="filter-tag active" onclick="filterByType(this, 'all')" data-i18n="all">
+            <div
+              class="filter-tag active"
+              onclick="filterByType(this, 'all')"
+              data-i18n="all"
+            >
               All
             </div>
             <div class="filter-tag" onclick="filterByType(this, 'palma')">
@@ -250,7 +305,9 @@
 
         <div id="emptyState" class="empty-state" style="display: none">
           <h2 data-i18n="noAssociationsFound">No associations were found.</h2>
-          <p data-i18n="tryAdjustingSearch">Try adjusting your search or filters</p>
+          <p data-i18n="tryAdjustingSearch">
+            Try adjusting your search or filters
+          </p>
         </div>
       </div>
     </section>
@@ -299,11 +356,16 @@
             <h3 data-i18n="sendYourMessage">Send us your Message</h3>
             <div class="form-group">
               <label for="contactName" data-i18n="fullName">Full Name *</label>
-              <input type="text" id="contactName" name="name" required />
+              <input type="text" id="contactName" name="from_name" required />
             </div>
             <div class="form-group">
               <label for="contactEmail" data-i18n="email">Email *</label>
-              <input type="email" id="contactEmail" name="email" required />
+              <input
+                type="email"
+                id="contactEmail"
+                name="reply_to"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="contactPhone" data-i18n="phone">Phone</label>
@@ -311,15 +373,19 @@
             </div>
             <div class="form-group">
               <label for="contactSubject" data-i18n="subject">Subject *</label>
-              <input type="text" id="contactSubject" name="subject" required />
+              <input type="text" id="contactSubject" name="subject_text" required />
             </div>
             <div class="form-group">
               <label for="contactMessage" data-i18n="message">Message *</label>
               <textarea id="contactMessage" name="message" required></textarea>
             </div>
             <div class="form-buttons">
-              <button type="submit" class="btn-submit" data-i18n="sendMessage">Send Message</button>
-              <button type="reset" class="btn-cancel" data-i18n="clear">Clear</button>
+              <button type="submit" class="btn-submit" data-i18n="sendMessage">
+                Send Message
+              </button>
+              <button type="reset" class="btn-cancel" data-i18n="clear">
+                Clear
+              </button>
             </div>
           </form>
         </div>
@@ -341,37 +407,54 @@
     <div id="joinModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 data-i18n="joinRequest">Join Request to <span id="joinAssociationName"></span></h2>
+          <h2 data-i18n="joinRequest" id="joinModalTitle">
+  Join Request to 
+</h2>
           <button class="close-btn" onclick="closeJoinModal()">&times;</button>
         </div>
         <div class="modal-body">
           <form id="joinForm" onsubmit="submitJoinForm(event)">
             <div class="form-group">
               <label for="fullName" data-i18n="fullName">Full Name *</label>
-              <input type="text" id="fullName" name="fullName" required />
+              <input type="text" id="fullName" name="from_name" required />
             </div>
             <div class="form-group">
               <label for="email" data-i18n="email">Email *</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="reply_to" required />
             </div>
             <div class="form-group">
               <label for="phone" data-i18n="phone">Phone</label>
               <input type="tel" id="phone" name="phone" />
             </div>
             <div class="form-group">
-              <label for="nationality" data-i18n="nationality">Nationality</label>
+              <label for="nationality" data-i18n="nationality"
+                >Nationality</label
+              >
               <input type="text" id="nationality" name="nationality" />
             </div>
             <div class="form-group">
-              <label for="message" data-i18n="messageToAssociation">Message to the Association</label>
+              <label for="message" data-i18n="messageToAssociation"
+                >Message to the Association</label
+              >
               <textarea id="message" name="message"></textarea>
             </div>
+
+            <input
+              type="hidden"
+              name="association_name"
+              id="associationNameHidden"
+              value=""
+            />
+
             <div class="form-buttons">
-              <button type="submit" class="btn-submit" data-i18n="sendRequest">Send Request</button>
+              <button type="submit" class="btn-submit" data-i18n="sendRequest">
+                Send Request
+              </button>
               <button
                 type="button"
                 class="btn-cancel"
-                onclick="closeJoinModal()" data-i18n="cancel"
+                onclick="closeJoinModal()"
+                data-i18n="cancel"
               >
                 Cancel
               </button>
@@ -393,10 +476,15 @@
         </div>
         <div class="footer-section">
           <h4 data-i18n="quickLinks">Quick Links</h4>
-          <a href="#associations" onclick="navigateTo('associations')" data-i18n="associations"
+          <a
+            href="#associations"
+            onclick="navigateTo('associations')"
+            data-i18n="associations"
             >Associations</a
           >
-          <a href="#contact" onclick="navigateTo('contact')" data-i18n="contact">Contact</a>
+          <a href="#contact" onclick="navigateTo('contact')" data-i18n="contact"
+            >Contact</a
+          >
           <a href="#home" onclick="navigateTo('home')" data-i18n="home">Home</a>
         </div>
         <div class="footer-section">

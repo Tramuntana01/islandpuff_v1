@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0a1f14 0%, #0d2818 100%);
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, #091f20 100%);
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -19,14 +19,14 @@ body {
 
 /* Navigation Bar */
 nav {
-  background: rgba(33, 8, 23, 0.95);
+  background: rgb(47, 47, 47);
   backdrop-filter: blur(10px);
   padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid #4ade80;
+  border-bottom: 2px solid #00fffb;
 }
 
 .nav-container {
@@ -39,9 +39,10 @@ nav {
 }
 
 .nav-logo {
+  font-family: 'Fascinate Inline';
   font-size: 1.8em;
   font-weight: 800;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #ffffff, #00fffb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -58,7 +59,7 @@ nav {
 
 .nav-menu li a {
   display: block;
-  color: #b0f4b8;
+  color: #00fffb;
   text-decoration: none;
   padding: 20px 25px;
   transition: all 0.3s ease;
@@ -69,8 +70,8 @@ nav {
 
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  color: #4ade80;
-  border-bottom-color: #4ade80;
+  color: #ffffff;
+  border-bottom-color: #00fffb;
 }
 
 #langBtn {
@@ -136,22 +137,23 @@ section.active {
   border-radius: 20px;
   margin-bottom: 60px;
   text-align: center;
-  border: 2px solid rgba(74, 222, 128, 0.3);
+  border: 2px solid rgb(0, 251, 255);
   position: relative;
   overflow: hidden;
 }
 
 .hero h1 {
-  color: #4ade80;
+  font-family: 'Fascinate Inline';
+  color: #00fffb;
   font-size: 3.5em;
   margin-bottom: 20px;
-  text-shadow: 0 4px 20px rgba(74, 222, 128, 0.3);
+  text-shadow: 0 4px 20px rgba(0, 255, 251, 0.3);
   font-weight: 800;
   letter-spacing: 2px;
 }
 
 .hero p {
-  color: #b0f4b8;
+  color: #ffffff;
   font-size: 1.3em;
   max-width: 700px;
   margin: 0 auto 40px;
@@ -173,8 +175,8 @@ section.active {
 
 .btn-primary {
   padding: 15px 40px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
-  color: #0a1f14;
+  background: linear-gradient(135deg, #ffffff, #00fffb);
+  color: rgb(47, 47, 47);
   border: none;
   border-radius: 10px;
   font-size: 1.1em;
@@ -186,14 +188,14 @@ section.active {
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(74, 222, 128, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 255, 251, 0.5);
 }
 
 .btn-secondary {
   padding: 15px 40px;
   background: transparent;
-  color: #4ade80;
-  border: 2px solid #4ade80;
+  color: #00fffb;
+  border: 2px solid #00fffb;
   border-radius: 10px;
   font-size: 1.1em;
   font-weight: 700;
@@ -202,7 +204,7 @@ section.active {
 }
 
 .btn-secondary:hover {
-  background: #4ade80;
+  background: #00fffb;
   color: #0a1f14;
 }
 
@@ -217,16 +219,16 @@ section.active {
 }
 
 .content-section h2 {
-  color: #1a472a;
+  color: #000000;
   font-size: 2.5em;
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 3px solid #4ade80;
+  border-bottom: 3px solid #00fffb;
   font-weight: 700;
 }
 
 .content-section h3 {
-  color: #2d5a3d;
+  color: #000000;
   font-size: 1.8em;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -234,7 +236,7 @@ section.active {
 }
 
 .content-section p {
-  color: #555;
+  color: #333333;
   font-size: 1.1em;
   line-height: 1.8;
   margin-bottom: 15px;
@@ -320,11 +322,11 @@ section.active {
   background: #f9f9f9;
   padding: 25px;
   border-radius: 10px;
-  border: 2px solid #4ade80;
+  border: 2px solid #000000;
 }
 
 .value-item h5 {
-  color: #1a472a;
+  color: #000000;
   font-size: 1.2em;
   margin-bottom: 10px;
   font-weight: 700;
@@ -365,15 +367,15 @@ section.active {
 
 .search-box input:focus {
   outline: none;
-  border-color: #4ade80;
+  border-color: #00fffb;
   box-shadow: 0 0 15px rgba(74, 222, 128, 0.3);
 }
 
 .search-box button {
   padding: 15px 40px;
-  background: linear-gradient(135deg, #1a472a, #2d5a3d);
-  color: #4ade80;
-  border: 2px solid #4ade80;
+  background: rgb(47, 47, 47);
+  color: #00fffb;
+  border: 2px solid #00fffb;
   border-radius: 10px;
   font-size: 1em;
   font-weight: 700;
@@ -382,8 +384,8 @@ section.active {
 }
 
 .search-box button:hover {
-  background: linear-gradient(135deg, #2d5a3d, #3d7a4d);
-  box-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
+  background: rgb(47, 47, 47);
+  box-shadow: 0 0 20px rgba(0, 255, 251, 0.5);
 }
 
 .filter-tags {
@@ -405,10 +407,10 @@ section.active {
 
 .filter-tag:hover,
 .filter-tag.active {
-  background: #1a472a;
-  color: #4ade80;
-  border-color: #4ade80;
-  box-shadow: 0 5px 20px rgba(74, 222, 128, 0.3);
+  background: rgb(47, 47, 47);
+  color: #00fffb;
+  border-color: #00fffb;
+  box-shadow: 0 5px 20px rgba(0, 255, 251, 0.3);
 }
 
 .associations-grid {
@@ -429,8 +431,8 @@ section.active {
 
 .association-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(74, 222, 128, 0.25);
-  border-color: #4ade80;
+  box-shadow: 0 20px 60px rgba(0, 255, 251, 0.25);
+  border-color: #00fffb;
 }
 
 .card-image-wrapper {
@@ -456,21 +458,21 @@ section.active {
 }
 
 .card-header {
-  background: linear-gradient(135deg, #1a472a, #2d5a3d);
-  color: #4ade80;
+  background: #000000;
+  color: #00fffb;
   padding: 25px;
 }
 
 .card-header h3 {
   margin: 0 0 8px 0;
   font-size: 1.5em;
-  color: #4ade80;
+  color: #00fffb;
   font-weight: 700;
 }
 
 .card-location {
   font-size: 0.95em;
-  color: #b0f4b8;
+  color: #00fffb;
   font-weight: 500;
 }
 
@@ -490,7 +492,7 @@ section.active {
 
 .info-label {
   font-weight: 700;
-  color: #1a472a;
+  color: #000000;
   font-size: 0.85em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -504,11 +506,11 @@ section.active {
 }
 
 .description {
-  color: #666;
+  color: #333333;
   font-size: 0.95em;
   line-height: 1.6;
   margin-bottom: 20px;
-  border-left: 3px solid #4ade80;
+  border-left: 3px solid #00fffb;
   padding-left: 15px;
 }
 
@@ -534,25 +536,25 @@ section.active {
 
 .btn-info {
   background: #f0f0f0;
-  color: #1a472a;
-  border: 2px solid #1a472a;
+  color: rgb(47, 47, 47);
+  border: 2px solid #000000;
 }
 
 .btn-info:hover {
-  background: #1a472a;
-  color: #4ade80;
-  box-shadow: 0 5px 15px rgba(26, 71, 42, 0.3);
+  background: #103768;
+  color: #00fffb;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-join {
-  background: linear-gradient(135deg, #1a472a, #2d5a3d);
-  color: #4ade80;
-  border: 2px solid #4ade80;
+  background: rgb(47, 47, 47);
+  color: #00fffb;
+  border: 2px solid #00fffb;
 }
 
 .btn-join:hover {
-  background: linear-gradient(135deg, #2d5a3d, #3d7a4d);
-  box-shadow: 0 5px 20px rgba(74, 222, 128, 0.4);
+  background: #103768;
+  box-shadow: 0 5px 20px rgba(0, 255, 251, 0.4);
 }
 
 /* MODAL */
@@ -583,17 +585,17 @@ section.active {
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
-  border: 2px solid #4ade80;
+  border: 2px solid #00fffb;
 }
 
 .modal-header {
-  background: linear-gradient(135deg, #1a472a, #2d5a3d);
-  color: #4ade80;
+  background: #000000;
+  color: #00fffb;
   padding: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #4ade80;
+  border-bottom: 2px solid #00fffb;
 }
 
 .modal-header h2 {
@@ -605,7 +607,7 @@ section.active {
 .close-btn {
   background: none;
   border: none;
-  color: #4ade80;
+  color: #00fffb;
   font-size: 32px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -632,7 +634,7 @@ section.active {
 .form-group label {
   display: block;
   font-weight: 700;
-  color: #1a472a;
+  color: #000000;
   margin-bottom: 10px;
   font-size: 0.95em;
 }
@@ -651,8 +653,8 @@ section.active {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #4ade80;
-  box-shadow: 0 0 15px rgba(74, 222, 128, 0.3);
+  border-color: #00fffb;
+  box-shadow: 0 0 15px rgba(23, 221, 252, 0.3);
 }
 
 .form-group textarea {
@@ -678,14 +680,14 @@ section.active {
 }
 
 .btn-submit {
-  background: linear-gradient(135deg, #1a472a, #2d5a3d);
-  color: #4ade80;
-  border: 2px solid #4ade80;
+  background: rgb(47, 47, 47);
+  color: #00fffb;
+  border: 2px solid #00fffb;
 }
 
 .btn-submit:hover {
-  background: linear-gradient(135deg, #2d5a3d, #3d7a4d);
-  box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+  background: #1a1a1a;
+  box-shadow: 0 10px 30px rgba(0, 255, 251, 0.3);
 }
 
 .btn-cancel {
@@ -708,7 +710,7 @@ section.active {
 
 .empty-state h2 {
   font-size: 2.2em;
-  color: #1a472a;
+  color: #000000;
   margin-bottom: 15px;
   font-weight: 700;
 }
@@ -735,7 +737,7 @@ section.active {
 }
 
 .contact-info h3 {
-  color: #1a472a;
+  color: #000000;
   margin-bottom: 30px;
   font-weight: 700;
 }
@@ -754,7 +756,7 @@ section.active {
 
 .contact-item strong {
   display: block;
-  color: #1a472a;
+  color: #000000;
   font-size: 1.1em;
   margin-bottom: 8px;
   font-weight: 700;
@@ -767,14 +769,14 @@ section.active {
 }
 
 .contact-item a {
-  color: #4ade80;
+  color: #00fffb;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .contact-item a:hover {
-  color: #22c55e;
+  color: #ffffff;
 }
 
 .contact-form {
@@ -786,18 +788,18 @@ section.active {
 }
 
 .contact-form h3 {
-  color: #1a472a;
+  color: #000000;
   margin-bottom: 30px;
   font-weight: 700;
 }
 
 /* FOOTER */
 footer {
-  background: linear-gradient(135deg, #0a1f14, #0d2818);
-  color: #b0f4b8;
+  background: rgb(31, 31, 31);
+  color: #ffffff;
   padding: 50px 30px 20px;
   margin-top: auto;
-  border-top: 2px solid #4ade80;
+  border-top: 2px solid #00fffb;
 }
 
 .footer-container {
@@ -810,7 +812,7 @@ footer {
 }
 
 .footer-section h4 {
-  color: #4ade80;
+  color: #00fffb;
   margin-bottom: 20px;
   font-size: 1.1em;
   font-weight: 700;
@@ -818,7 +820,7 @@ footer {
 
 .footer-section p,
 .footer-section a {
-  color: #b0f4b8;
+  color: #ffffff;
   text-decoration: none;
   margin-bottom: 10px;
   display: block;
@@ -826,7 +828,7 @@ footer {
 }
 
 .footer-section a:hover {
-  color: #4ade80;
+  color: #00fffb;
 }
 
 .footer-social {
@@ -841,26 +843,26 @@ footer {
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: rgba(74, 222, 128, 0.2);
-  border: 2px solid #4ade80;
+  background: rgba(0, 255, 251, 0.2);
+  border: 2px solid #00fffb;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
 
 .footer-social a:hover {
-  background: #4ade80;
-  color: #0a1f14;
+  background: #00fffb;
+  color: #000000;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(74, 222, 128, 0.3);
+  border-top: 1px solid rgba(0, 255, 251, 0.3);
   padding-top: 25px;
   text-align: center;
 }
 
 .footer-bottom p {
   margin: 0;
-  color: #b0f4b8;
+  color: #ffffff;
   font-size: 0.95em;
 }
 
